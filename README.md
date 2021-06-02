@@ -16,16 +16,3 @@
 ### 效果展示
 
 🎞 b站展示视频戳[这里](https://www.bilibili.com/video/BV1pv411v7zt)。
-
-🎞 也可以直接在此页面下浏览。
-
-<iframe 
-src="https://www.bilibili.com/video/BV1pv411v7zt"
-scrolling="no" 
-border="0" 
-frameborder="no" 
-framespacing="0" 
-allowfullscreen="true" 
-height=500 
-width=600> 
-</iframe>
