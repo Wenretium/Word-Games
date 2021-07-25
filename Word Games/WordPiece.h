@@ -1,5 +1,7 @@
 #pragma once
 #include"Word.h"
+
+// 继承Ball，增加私有成员字母，作为Game2中每个浮现的字母
 class LetterBall :public Ball
 {
 protected:
@@ -9,6 +11,8 @@ public:
 	virtual void print()=0;
 	char getLetter() { return letter; }
 };
+
+// 两个LetterBall子类用于实现Game2中不同的需求（忘记具体了）
 class LetterBallA :/*virtual */public LetterBall
 {
 public:
@@ -16,6 +20,7 @@ public:
 	LetterBallA(const LetterBallA& lb):LetterBall(lb){}
 	virtual void print();
 };
+
 class LetterBallB : /*virtual*/ public LetterBall
 {
 private:
@@ -30,6 +35,9 @@ public:
 	bool fall(int limit, int distance);
 	void set(int nx) { x = nx; }
 };
+
+// 用于Game2，每局创建一个WordPiece
+// 把Word英文单词拆成一组LetterBall，存入letterballs，myanswer是鼠标点击得到的结果
 class WordPiece :public Word
 {
 private:
@@ -44,11 +52,4 @@ public:
 	void print()const;
 	bool check_click(int cx,int cy);
 	bool letterballs_empty();
-};
-class LetterBallAB :public LetterBallA, public LetterBallB//虚基类:LetterBall//使用虚基类时，WordBurger会出现delete报错，原因暂未查明
-{
-private:
-public:
-	LetterBallAB(char nletter, int xx, int yy, int num):/*LetterBall(nletter, xx,  yy), */LetterBallA(nletter, xx, yy),LetterBallB(nletter, xx, yy,num){}
-	virtual void print() {};
 };

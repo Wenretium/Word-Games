@@ -1,7 +1,6 @@
 #include"WordBall.h"
 #include"WordPiece.h"
 #include"WordBurger.h"
-#include"Array.h"
 #pragma comment(lib,"winmm.lib")//timeGetTime()报错
 const int Width = 1000;
 const int Height = 700;
@@ -551,49 +550,6 @@ int main()
 	}
 	EndBatchDraw();
 
-	//额外调试部分：用于大作业，与本项目无关
-	////将单词表中前100个打乱顺序，赋值给vector和Array
-	//vector<Word>vectest(100);
-	//copy_n(words.begin(), 100,vectest.begin());
-	//random_shuffle(vectest.begin(), vectest.end());
-	//Array<Word>arraytest(100);
-	//for (int i = 0; i < 100; i++)
-	//arraytest[i] = vectest[i];
-	////对两个容器都进行sort排序操作，检验结果是否相等
-	//sort(vectest.begin(), vectest.end());
-	//arraytest.sort();
-	//if (equal(vectest.begin(), vectest.end(), arraytest.getList()))
-	//	cout << "两个容器内容相等"<<endl;
-	//else cout << "两个容器内容不相等" << endl;
-
-	////将vector的第20与第50个元素对调，检验两个容器的第一个不同点
-	//vector<Word>::iterator iter1 = vectest.begin();
-	//advance(iter1, 30);
-	//vector<Word>::iterator iter2 = vectest.begin();
-	//advance(iter2, 50);
-	//swap(iter1, iter2);
-	//if (equal(vectest.begin(), vectest.end(), arraytest.getList()))
-	//	cout << "两个容器内容相等" << endl;
-	//else cout << "两个容器内容不相等" << endl;
-	//swap(iter1, iter2);//换回去
-	//iter_swap(iter1, iter2);
-	//if (equal(vectest.begin(), vectest.end(), arraytest.getList()))
-	//	cout << "两个容器内容相等" << endl;
-	//else cout << "两个容器内容不相等" << endl;
-	////发现：swap后仍相等，iter_swap后不相等
-
-	//pair<vector<Word>::iterator, Word*> differ;
-	//differ = mismatch(vectest.begin(), vectest.end(), arraytest.getList());
-	//cout << endl<<"第一个不同的元素在于 vector为" << *differ.first << "而Array为" << *differ.second << endl;
-	////
-	//fill_n(vectest.begin(), 5, Word("homework", "   作业作业作业"));
-	//for (int i = 0; i < 7; i++)
-	//	cout << vectest[i];
-	//unique(vectest.begin(), vectest.end());
-	//for (int i = 0; i < 7; i++)
-	//	cout << vectest[i];
-	//system("pause");
-	
 	return 0;
 }
 void printStage(int score, int lives, IMAGE heart,IMAGE heart_b)

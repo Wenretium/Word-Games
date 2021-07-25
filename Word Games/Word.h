@@ -25,6 +25,8 @@ extern const int LetterSize;
 extern const int LayerThickness;
 extern const int LayerWidth;
 using namespace std;
+// 构造三个子类
+// Word：含有英文和对应意思两个私有成员，被WordBall、
 class Word
 {
 private:

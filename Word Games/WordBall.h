@@ -1,6 +1,8 @@
 #pragma once
 #pragma once
 #include"Word.h"
+
+// WordBall：Game1中每个落下的单词球
 class WordBall :public Word, public Ball
 {
 private:

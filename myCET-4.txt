@@ -1986,7 +1986,6 @@ invasion n.入侵，侵略；侵犯
 invent vt.发明，创造；捏造
 invention n.发明，创造；捏造
 inventor n.发明者；发明家
-invest vt.投资；投入
 investigate vt.&vi.调查
 investigation n.调查，调查研究
 investment n.投资，投资额，投入
@@ -2879,7 +2878,6 @@ prospect n.展望；前景，前程
 prosperity n.繁荣；昌盛，兴旺
 prosperous a.繁荣的，昌盛的
 protect vt.保护，保卫，警戒
-protection n.保护，警戒
 protective a.保护的，防护的
 protein n.蛋白质，朊
 protest vt.&vi.&n.抗议

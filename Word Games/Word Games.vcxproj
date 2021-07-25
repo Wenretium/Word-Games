@@ -122,7 +122,6 @@
     <ClCompile Include="WordPiece.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Array.h" />
     <ClInclude Include="Word.h" />
     <ClInclude Include="WordBall.h" />
     <ClInclude Include="WordBurger.h" />

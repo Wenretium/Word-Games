@@ -1,7 +1,0 @@
-﻿  main.cpp
-S:\大一 2019\Word Games\Word Games\WordBall.h(15,26): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
-S:\大一 2019\Word Games\Word Games\main.cpp(38,30): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-S:\大一 2019\Word Games\Word Games\main.cpp(258,52): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-S:\大一 2019\Word Games\Word Games\main.cpp(259,55): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-S:\大一 2019\Word Games\Word Games\main.cpp(396,42): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-  Word Games.vcxproj -> S:\大一 2019\Word Games\x64\Debug\Word Games.exe

@@ -2,6 +2,8 @@
 void LetterBallA::print()
 {
 	IMAGE let;
+	// 这里loadimage的第二个参数，如果换成字符串变量或常量，会报错。似乎只能逐个列举，直接写入路径。
+	// （也许这就是屎山的由来吧==
 	switch(letter)
 	{ 
 	case 'a':
